@@ -77,13 +77,13 @@ alias t='tig --topo-order'
 alias g='tig --all --topo-order'
 
 # increase file limit for gpinitsystem
-ulimit -n 65536
+# ulimit -n 65536
 
 #export LD_LIBRARY_PATH="/data/hai/local/lib:$LD_LIBRARY_PATH"
 
-export GOPATH=$HOME/gopath
+export GOPATH=$HOME/golang
 
-export PATH=$HOME/.local/bin:/usr/local/opt/coreutils/libexec/gnubin:/usr/local/opt/go/libexec/bin:/usr/local/opt/gnu-tar/libexec/gnubin:/usr/local/bin:/usr/local/texlive/2013/bin/x86_64-darwin:/usr/local/sbin:$PATH
+export PATH=$HOME/.local/bin:$GOPATH/bin:/usr/local/opt/coreutils/libexec/gnubin:/usr/local/opt/go/libexec/bin:/usr/local/opt/gnu-tar/libexec/gnubin:/usr/local/bin:/usr/local/texlive/2013/bin/x86_64-darwin:/usr/local/sbin:$PATH
 export JAVA_HOME=$(/usr/libexec/java_home -v 1.7)
 
 export PAGER=vimpager
@@ -136,3 +136,4 @@ export MANPATH="/usr/local/opt/gnu-sed/libexec/gnuman:$MANPATH"
 
 alias swift='xcrun swift'
 alias p='ipython'
+alias top='htop'
